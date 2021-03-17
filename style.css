@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#left-side-div {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+}
+
+.black-text {
+  color: hsl(0, 6%, 24%);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ .were {
+  color: hsl(0, 36%, 70%);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+p {
+  color:  hsl(0, 36%, 70%);
+  padding-bottom: 30px;
+  line-height: 1.2;
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+  height: 25px;
+  width: 85%;
+  outline: none;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.button {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 36%, 70%));
+  border-radius: 50px;
+  padding: 10px;
+  width: 65px;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 0 10px 30px -5px hsl(0, 36, 70%);
+  border: 1px solid hsl(0, 36%, 70%);
+  outline: none;
+  cursor: pointer;
+}
+
+
+#text-div {
+  width: 100%;
+  padding: 100px 20px 0 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#img-div {
+  height: 100vh;
+  min-width: 50%;
+  background-image: url('images/hero-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#error-message {
+  color: hsl(0, 93%, 68%);
+  padding: 10px 0 20px 30px;
+}
+
+#exclamation-point {
+    background: hsl(0, 93%, 68%);
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 15px;
+    right: 21%;
+    opacity: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+@media (max-width: 800px){
+  #img-div {
+    display: none;
+    overflow: hidden;
+    height: 0;
+  }
+  #left-side-div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    width: 100%;
+  }
+
+  #text-div {
+    width: 375px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 50px 0 0 0;
+  }
+
+  #text-div > p {
+    line-height: 1.2;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0px -20px;
+  }
+
+  input {
+    width: 225px;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+
+  .button {
+    width: 50px;
+    right: 75px;
+    top: 10px;
+  }
+
+  .display-none {
+    display: block;
+    margin: 20px -10px;
+    width: 375px;
+  }
+
+  .were, .black-text {
+    margin: 0px 80px 0px 0px;
+    letter-spacing: 0.2em;
+  }
+
+
+  #error-message {
+    padding: 10px 0 0px 30px;
+    text-align: left;
+  }
+
+  #exclamation-point {
+      background: hsl(0, 93%, 68%);
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      top: 25px;
+      right: 40%;
+      opacity: 0;
+  }
+
+}
