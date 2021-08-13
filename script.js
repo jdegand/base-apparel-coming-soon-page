@@ -6,6 +6,7 @@ let form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
     if(email.validity.valueMissing){
         e.preventDefault();
+        return;
     }else if (email.validity.typeMismatch) {
         e.preventDefault();
         errorMessage.classList.remove('hidden');
