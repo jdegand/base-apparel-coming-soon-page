@@ -4,7 +4,9 @@ let errorMessage = document.getElementById("error-message");
 let form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
-    if (email.validity.typeMismatch) {
+    if(email.validity.valueMissing){
+        e.preventDefault();
+    }else if (email.validity.typeMismatch) {
         e.preventDefault();
         errorMessage.classList.remove('hidden');
         exclamationPoint.style.opacity = 1;
