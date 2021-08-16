@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Continued development
 
-- Need to check for empty strings in form.
+- @import in style.css could be replaced since it can block css from being applied if it fails.
 
 ### Useful resources
 
